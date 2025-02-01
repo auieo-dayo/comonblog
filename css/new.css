@@ -3,6 +3,7 @@ html {
 }
 ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 li img { 
