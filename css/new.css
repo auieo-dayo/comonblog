@@ -1,0 +1,29 @@
+html {
+    /*background-color: white;*/
+}
+ul {
+    display: flex;
+    gap: 20px;
+}
+li img { 
+    width: 70px;
+    height: 70px;
+}
+li {
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5px;
+    transition: .3s;
+    height: max-content;
+    width: max-content;
+    border: 2px solid #000;
+    display: flex;
+    font-size: 20px;
+    background: #FFF;
+}
+li:hover {
+    scale: 1.2;
+}
+.date {
+    font-size: small;
+}

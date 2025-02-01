@@ -1,0 +1,55 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+}
+header iframe{
+height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.gotop {
+    text-align: end;
+}
+.gotop button {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: rgb(243, 233, 97);
+    transition: .3s;
+}
+.gotop button:hover {
+    background: rgb(163, 157, 66);
+}
+.title {
+    text-align: center;
+}
+.line{
+    text-align: center;
+    border-bottom: 2px solid #000;
+    /*display: flex;
+    border: 2px solid #000;*/
+}
+main p {
+    font-size: large;
+    margin: auto;
+}
+main img {
+    width: 150px;
+    border: 2px solid #000;
+}
+.header {
+    display: block;
+    margin: auto;
+    border: 2px solid #000;
+    width: fit-content;
+    width: 100%;
+    height: 56.25%;
+}
+.img {
+    transition: .3s;
+}
+.img:hover {
+    scale: 1.1;
+}

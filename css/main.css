@@ -1,0 +1,62 @@
+header {
+    height: max-content;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+}
+
+.tyuui {
+    font-size: larger;
+    background: #f07373;
+    border-radius: 15px;
+}
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex
+}
+#tyuui_open{
+    border-radius: 10px;
+    height: 80px;
+    text-shadow: 2px 2px 5px gray;
+    color: white;
+    background-color: rgb(243, 138, 138);
+    width: 80px;
+    text-align: center;
+    transition: .3s;
+}
+#tyuui_close{
+    border-radius: 10px;
+    height: 80px;
+    text-shadow: 2px 2px 5px gray;
+    color: white;
+    background-color: rgb(243, 138, 138);
+    width: 80px;
+    text-align: center;
+    transition: .3s;
+}
+#tyuui_open:hover{
+    scale: 1.2;
+}
+#tyuui_close:hover{
+    scale: 1.2;
+}
+.gotop {
+    text-align: end;
+}
+.gotop button {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: rgb(243, 233, 97);
+    transition: .3s;
+}
+.gotop button:hover {
+    background: rgb(163, 157, 66);
+}
+.saisin {
+    border-bottom: 2px solid #000;
+}

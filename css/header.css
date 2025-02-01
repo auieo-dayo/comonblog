@@ -1,0 +1,53 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.hidden {
+    display: none;
+    transition: .3s;
+}
+.menu_div {
+    height: 50px;
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+transition: .7s;
+background: white;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.menu li {
+    transition: .3s;
+}
+.menu li:hover {
+    scale: 1.2;
+    color: white;
+}
+#open {
+    width: 60px ;
+    height: 50px;
+    background: #33c5c5;
+    transition: .3s;
+}
+#open:hover {
+    background: #c53333;
+    border-radius: 10px;
+}
+#hidden {
+    width: 60px;
+    height: 50px;
+    background: #33c5c5;
+    transition: .3s;
+}
+#hidden:hover {
+    background: #c53333;
+    border-radius: 10px;
+}
+#open_now {
+    background: #3383c5;
+}
