@@ -60,3 +60,6 @@ body {
 .saisin {
     border-bottom: 2px solid #000;
 }
+hidden {
+    display: none;
+}
