@@ -4,6 +4,10 @@ header iframe{
     padding: 0px;
     width: 100%;
 }
+
+header iframe #open_now_google {
+    height: 100%;
+}
 body {
     margin: 0px;
     padding: 0px;
