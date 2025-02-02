@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://comon-blog.netlify.app</loc>
-		<lastmod></lastmod>
-	</url>
-	<url>
-		<loc>https://comon-blog.netlify.app/blog/2025/02/0002.html</loc>
-		<lastmod></lastmod>
+		<loc>https://comon-blog.netlify.app/error/404.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2025-02-02</lastmod>
 	</url>
 	<url>
 		<loc>https://comon-blog.netlify.app/blog/2025/02/0001.html</loc>
-		<lastmod></lastmod>
+		<lastmod>NaN-NaN-NaN</lastmod>
+	</url>
+	<url>
+		<loc>https://comon-blog.netlify.app/blog/2025/02/0002.html</loc>
+		<lastmod>NaN-NaN-NaN</lastmod>
+	</url>
+	<url>
+		<loc>https://comon-blog.netlify.app</loc>
+		<lastmod>NaN-NaN-NaN</lastmod>
 	</url>
 </urlset>
