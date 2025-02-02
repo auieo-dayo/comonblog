@@ -16,6 +16,3 @@ function hidden_menu(){
     function open_link(i) {
         top.location.href = i
     }
-    function click_google() {
-        document.getElementsByClassName("menu_div")[0].id = "open_now_google";
-    }
