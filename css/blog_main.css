@@ -4,9 +4,6 @@ body {
     padding: 0px;
     background-color: bisque;
 }
-header iframe #open_now_google {
-    height: 730px;
-}
 header iframe{
 height: max-content;
     margin: 0px;
