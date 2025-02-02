@@ -1,5 +1,5 @@
 header iframe{
-    height: 100px;
+    height: max-content;
     margin: 0px;
     padding: 0px;
     width: 100%;
