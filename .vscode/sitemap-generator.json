@@ -1,0 +1,31 @@
+{
+  "sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "comon-blog.netlify.app",
+    "Root": "./",
+    "IncludeExt": [
+      ".html",
+      ".php"
+    ],
+    "Exclude": [
+      "tyuui.html",
+      "new.html",
+      "header.html",
+      "googlec88626a1ea1f3004.html",
+      "footer.html",
+      "locked/template.html"
+
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod"
+    ],
+    "DefaultChangeFrequency": "monthly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": false,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": false,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
+}
