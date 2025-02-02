@@ -1,4 +1,19 @@
+
 [[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml"
+for = "/sitemap.xml"
+[headers.values]
+  Content-Type = "application/xml"
+[[plugins]]
+package = "netlify-plugin-sitemap"
+
+[plugins.inputs]
+filePath = "/sitemap.xml"
+exclude  = [
+  "/tyuui.html",    # 除外したいページ
+  "/locked/*",      # 除外したいディレクトリ（ワイルドカード `*` 使用）
+  "/new.html",      # 特定のファイル
+  "/header.html",
+  "/footer.html",
+  "/googlec88626a1ea1f3004.html",
+]
+  prettyURLs = true
