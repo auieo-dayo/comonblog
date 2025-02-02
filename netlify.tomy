@@ -1,21 +1,21 @@
 [[headers]]
-  for = "/sitemap.xml"
-  [headers.values]
-    Content-Type = "application/xml"
+for = "/sitemap.xml"
+[headers.values]
+  Content-Type = "application/xml"
 [[plugins]]
-  package = "netlify-plugin-sitemap"
+package = "netlify-plugin-sitemap"
 
-  [plugins.inputs]
-  ignoredPaths = [
-    "/tyuui.html",    # 除外したいページ
-    "/locked/*",      # 除外したいディレクトリ（ワイルドカード `*` 使用）
-    "/new.html",   # 特定のファイル
-    "/header.html",
-    "/footer.html",
-    "/googlec88626a1ea1f3004.html",
-    "/googlec88626a1ea1f3004"
-    "/tyuui",
-    "/new",
-    "/header",
-    "/footer",
+[plugins.inputs]
+ignoredPaths = [
+  "/tyuui.html",    # 除外したいページ
+  "/locked/*",      # 除外したいディレクトリ（ワイルドカード `*` 使用）
+  "/new.html",      # 特定のファイル
+  "/header.html",
+  "/footer.html",
+  "/googlec88626a1ea1f3004.html",
+  "/googlec88626a1ea1f3004",  # カンマを追加
+  "/tyuui",          # カンマを追加
+  "/new",            # カンマを追加
+  "/header",         # カンマを追加
+  "/footer",         # カンマを追加
 ]
