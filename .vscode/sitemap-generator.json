@@ -16,10 +16,7 @@
       "locked/template.html"
 
     ],
-    "TagsToInclude": [
-      "priority",
-      "lastmod"
-    ],
+    "TagsToInclude": [],
     "DefaultChangeFrequency": "monthly",
     "TabCharacters": "\t",
     "bIncludeWWW": false,

@@ -2,17 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://comon-blog.netlify.app</loc>
-		<priority>1.00</priority>
-		<lastmod>2025-02-02</lastmod>
-	</url>
-	<url>
-		<loc>https://comon-blog.netlify.app/blog/2025/02/0001.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2025-02-01</lastmod>
+		<lastmod></lastmod>
 	</url>
 	<url>
 		<loc>https://comon-blog.netlify.app/blog/2025/02/0002.html</loc>
-		<priority>0.20</priority>
-		<lastmod>2025-02-01</lastmod>
+		<lastmod></lastmod>
+	</url>
+	<url>
+		<loc>https://comon-blog.netlify.app/blog/2025/02/0001.html</loc>
+		<lastmod></lastmod>
 	</url>
 </urlset>
