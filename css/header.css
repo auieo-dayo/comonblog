@@ -50,4 +50,6 @@ background: white;
 }
 #open_now {
     background: #3383c5;
+    height: 100px;
+    width: 100%;
 }

@@ -5,9 +5,10 @@ body {
     background-color: bisque;
 }
 header iframe{
-height: 50px;
+height: 100px;
     margin: 0px;
     padding: 0px;
+    width: 100%;
 }
 .gotop {
     text-align: end;
