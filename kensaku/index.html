@@ -1,0 +1,168 @@
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <!--<link rel="stylesheet" href="/css/main.css">-->
+            <style>
+                html {
+            font-family: sans-serif;
+        }
+        p input {
+            width: 20px;
+            height: 20px;
+        }
+        header {
+            width: 100%;
+            height: 44px;
+            background-color: beige;
+            padding:5px;
+            min-height:44px; 
+            border-bottom: solid 2px #000;
+            display: flex;
+            gap: 20px;
+        }
+        header p {
+            transition: .3s;
+        }
+        header p:hover {
+            scale: 1.2;
+            color: blue;
+        }
+        header p:active {
+            color: red;
+        }
+        .logo {
+        text-align: start;
+        border-right: solid 2px #000;
+        width: max-content;
+        height: 44px;
+        }
+        body {
+            margin:0; 
+        }
+        nonedisplay {
+            display: none;
+        }
+        html img {
+            user-select:none;
+        -webkit-user-select:none;
+        -ms-user-select: none;
+        -moz-user-select:none;
+        -khtml-user-select:none;
+        -webkit-user-drag:none;
+        -khtml-user-drag:none;
+        }
+        .link {
+            display: flex;
+            gap: 10px;
+        }
+        .engine {
+            text-align: center;
+        }
+        .texts input {
+            width: 250px;
+            height: 50px;
+            font-size: 20px;
+        }
+        .engine div button {
+            width: 60px;
+            height: 30px;
+        background: #35abc9;
+        transition: .3s;
+        }
+        .engine div button:hover {
+            background: #42d9ff;
+            scale: 1.2;
+        }
+        .engine div button:active {
+            background: #3581c9;
+        }
+        
+            </style>
+            <script>
+        
+        function link_click(i) {
+            var link = document.getElementById(i)
+            console.log(i)
+            console.log(link)
+            if (link) {
+                link.click();
+            } else {
+                console.warn("要素が見つかりません: " + i);
+            }
+        }
+        function kensaku(event,q1,op) {
+            event.preventDefault(); // デフォルトの送信を防ぐ
+            console.log(event); // 確認用
+            var q1 = q1.value
+            var op = op.value
+            console.log(q1)
+            var textElement = document.getElementById("kensaku_text"); // 要素を取得
+            if (textElement) { // 要素が存在するかチェック
+                var text = textElement.value; // 正しく値を取得
+                console.log(text); // 確認用
+            } else {
+                console.log("要素が見つかりません");
+            }
+            
+        
+            if (text == '') {
+                alert("テキストが入力されていません")
+            } else {
+                if (q1 =='') {
+                    alert("検索エンジンが選択されていません")
+                } else {
+                    if (q1 == 'syudou') {
+                        var q1 = ""
+                    }
+        if  (op == '') {
+            location.href = q1 + text
+            console.log("開きました")
+        } else {
+        
+            if (op == 'popup') {
+                console.log ("popup")
+                console.log(q1 + text)
+                window.open(q1 + text, "_blank", "width=500,height=500");
+            }
+        
+        }
+                }
+            }
+        }
+        
+            </script>
+        </head>
+<nonedisplay>
+    <a href="/" id="link_1">ホーム</a>
+    <a href="/a" id="link_2">あ</a>
+</nonedisplay>
+<body>
+    <header>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="37.125" viewBox="0,0,135,37.125" alt="Hoohle" class="logo" onclick="link_click('link_1')"><g transform="translate(-178.05936,-166.60799)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M178.05936,203.73299v-37.125h135v37.125z" fill="#000000" stroke-width="none"/><text transform="translate(224.55936,192.60799) scale(0.5,0.5)" font-size="40" xml:space="preserve" fill="#ff8989" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="Sans Serif" font-weight="normal" text-anchor="start" style="mix-blend-mode: normal"><tspan x="0" dy="0">検索</tspan></text><text transform="translate(222.18436,193.084) scale(0.55625,0.55625)" font-size="40" xml:space="preserve" fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="Sans Serif" font-weight="normal" text-anchor="start" style="mix-blend-mode: normal"><tspan x="0" dy="0">検索</tspan></text></g></g></svg>
+            <p onclick="link_click('link_2')">あ</p>
+    </header>
+    <main>
+        <form class="engine" onsubmit="kensaku(event,q1,op)">
+                <p>検索エンジン<br>
+                    <input type="radio" name="q1" value="https://www.google.com/search?q="> Google
+                    <input type="radio" name="q1" value="https://www.youtube.com/results?search_query="> YouTube
+                    <input type="radio" name="q1" value="https://search.yahoo.co.jp/search?p="> YahooJapan
+                    <input type="radio" name="q1" value="syudou"> URLを手動入力
+                </p>
+                <p>オプション<br>
+                    <input type="radio" name="op" value="popup">popup
+                    <input type="radio" name="op" value="">同じタブで開く
+                </p>
+                <div class="texts"><input type="text" name="q" id="kensaku_text"></div>
+                <div><button>検索</button></div>
+        </form>
+    </main>
+    </body>
+</html>
