@@ -18,8 +18,8 @@
       "kensaku/index.html"
 
     ],
-    "TagsToInclude": [],
-    "DefaultChangeFrequency": "monthly",
+    "TagsToInclude": ["lastmod"],
+    "DefaultChangeFrequency": "daily",
     "TabCharacters": "\t",
     "bIncludeWWW": false,
     "bRemoveFileExtentions": false,
